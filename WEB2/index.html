@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+    ul{
+        padding: 0;
+    }
+    /*header*/
+        .header{
+            width: 1180px;
+            height: 35px;
+            clear: both;
+            margin: 0 auto;
+         
+        }
+        .header-left{
+            width: 80px;
+            height: 35px;
+        
+            line-height: 35px;
+            margin-left: 100px;
+            float: left;
+        }
+        .header-left span{
+            font-size: 12px;
+            color: grey;
+        }
+        .header-right{
+            width: 700px;
+            height: 35px;
+        
+            float: right;
+        }
+        .header-right-left{
+            width: 150px
+            height:20px;
+            margin-top: 7px;
+        
+            float: left;
+        }
+        .header-right-left img{
+            margin-right: 5px;
+        }
+        .header-right-left span{
+            line-height: 10px;
+        }
+        .header-right-left span a{
+            color: grey;
+            font-size: 12px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .header-right-right{
+            width: 540px;
+            height: 35px;
+        
+            float: left;
+            margin-top: 8px;
+            margin-left: 10px;
+        }
+        .header-right-right span{
+           line-height: 10px;
+           margin-right: 5px;
+        }
+        .header-right-right span a{
+            color: grey;
+            font-size: 12px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /*sousuo*/
+        .sousuo{
+            width: 1180px;
+            height: 85px;
+            margin:0 auto;
+          
+            padding-top: 15px;
+            clear: both;
+        }
+        .sousuo-pic{
+            width: 120px;
+            height: 56px;
+            
+            margin-left: 100px;
+            float: left;
+        }
+        .sousuo-center{
+            width: 480px;
+            height: 46px;
+            float: left;
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+        .text {
+            width: 400px;
+            height: 39px;
+            border:3px solid #FF4D04;
+            float: left;
+            outline: none;
+            text-indent: 0.5em;
+        }
+        .btn{
+            width: 74px;
+            height: 46px;
+            line-height: 46px;
+            background-color: #FF4D04;
+            color: white;
+            border:none;
+            display:block;
+            float: right;
+        }
+        .btn a{
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+        }
+        .wenti{
+            width: 270px;
+            height: 35px;
+            
+            float: right;
+            margin-right: 100px;
+            margin-top: 15px;
+        }
+        .wenti-left{
+            width: 88px;
+            height: 35px;
+            
+            float: left;
+            border:1px solid #efefef;
+        }
+        .wenti-left img{
+            margin-left: 35px;
+        }
+        .wenti-left p{
+            width: 88px;
+            height: 15px;
+            font-size: 10px;
+            
+        }
+         .wenti-center{
+            width: 88px;
+            height: 35px;
+            
+            float: left;
+            border:1px solid #efefef;
+             
+         }
+         .wenti-center img{
+            margin-left: 35px;
+
+        }
+        .wenti-center p{
+            width: 88px;
+            height: 15px;
+            font-size: 10px;
+           ;
+            margin-top: 1px;
+        }
+        .wenti-right{
+            width: 88px;
+            height: 35px;
+            background-color: #FF4D04;
+            float: left;
+            border:1px solid #FF4D04;
+            border-left: none;
+        }
+        .wenti-right span{
+            color: white;
+        }
+        .sousuo-bottom{
+            width: 600px;
+            height: 20px;
+            margin-left: 370px;
+        }
+        .sousuo-bottom span a{
+            font-size: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+
+        }
+        /*title*/
+        .title{
+            width: 1180px;
+            height: 35px;
+            margin: 0 auto;
+            clear: both;
+            border-bottom: 1px solid #FF4D04;
+        }
+        .title-left{
+            width: 180px;
+            height: 35px;
+            line-height: 35px;
+            background-color:#FF4D04;
+            margin-left: 100px;
+            color: white;
+            float: left;
+
+        }
+        .title-left span{
+            margin-left: 15px;
+            font-size: 16px;
+        }
+        .title-right{
+            width: 630px;
+            height: 35px;
+          
+            float: left;
+
+        }
+        .title-right a{
+            width: 90px;
+            height: 35px;
+        
+            display: block;
+            float: left;
+            line-height: 35px;
+            text-align: center;
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        /*banner*/
+        .banner{
+            width: 980px;
+            height:430px;
+            margin: 0 auto;
+           
+            clear: both;
+        }
+        .banner-left{
+            width: 180px;
+            height: 430px;
+           
+            float: left;
+
+        }
+        .banner-left-top{
+            width: 100%;
+            height: 330px;
+            
+        }
+        .banner-left-top-left{
+            width: 30px;
+            height: 268px;
+            background-color: #4C4C4A;
+            padding-top: 60px;
+            text-align: center;
+            float: left;
+
+        }
+         .banner-left-top-left span{
+            color: #FF4D04;
+         }
+         .banner-left-top-right{
+            width: 150px;
+            height: 330px;
+            
+            float: left;
+         }
+          .banner-left-top-right ul{
+            width: 150px;
+            height: 25px;
+           
+          }
+           .banner-left-top-right ul li{
+            width: 36px;
+            height: 25px;
+            line-height: 25px;
+            text-indent: 0.1em;
+           
+            float: left;
+            list-style: none;
+           }
+           
+           .banner-left-top-right ul li a{
+             font-size: 12px;
+             text-decoration: none;
+             color: black;
+           }
+        .banner-left-bottom{
+            width: 100%;
+            height: 90px;
+         
+        }
+        .banner-left-bottom ul{
+            width: 100%;
+            height: 90px;
+           list-style: none;
+        }
+        .banner-left-bottom ul li{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+
+        
+        }
+        .banner-left-bottom ul li img{
+            margin-left: 2px;
+        }
+        .banner-center{
+            width: 625px;
+            height: 430px;
+            float: left;
+          
+        }
+        .banner-center-top{
+            width: 624px;
+            height: 280px;
+            position: relative;
+        }
+        .radius{ width: auto; height:15px; position:absolute; bottom:8px; left:50%; transform: translateX(-50%;); padding:0; }
+.radius li{ width:13px; height:13px; float:left; margin-right:5px; border-radius:50%; border:1px solid #ccc; background-color: #ccc; list-style:none; line-height: 12px;text-align: center;font-size: 12px; cursor: pointer;}
+.radius li.active{ background: #FF4D04; border:1px solid #FF4D04;}
+
+        .banner-center-bottom{
+            width: 624px;
+            height: 148px;
+          
+        }
+         .banner-center-bottom img{
+            width: 152px;
+            height: 150px;
+
+         }
+        .banner-right{
+          width: 150px;
+          height: 430px;
+          float: left;
+        }
+        .banner-right-top{
+            width: 150px;
+            height: 280px;
+        }
+        .banner-right-top p{
+            width: 200px;
+            height: 35px;
+          font-weight: 700;
+            line-height: 35px;
+            text-align: center;
+            color: #FF4D04;
+        }
+        .banner-right-top ul{
+            width: 100%;
+            height: 220px;
+            list-style: none;
+        }
+         .banner-right-top ul li{
+            width: 100%;
+            height: 20px;
+            line-height: 20px;
+            text-align:center;
+            color: #FF4D04;
+            font-weight: 700;
+         }
+        .banner-right-bottom{
+            width: 200px;
+            height: 150px;
+            background-color:hotpink;
+        }
+        .banner-right-bottom p{
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .banner-right-bottom-p{
+            width: 80px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #FF4D04;
+            border-radius: 3px;
+            color: white;
+            margin: 0 auto;
+        }
+        /*footer*/
+        .footer{
+            width: 1000px;
+            height: 110px;
+            margin: 0 auto;
+            margin-top: 10px;
+            clear: both;
+        }
+        .footer-left{
+            width: 125px;
+            height: 110px;
+            float: left;
+
+        }
+        .footer-left img{
+            width: 125px;
+            height: 110px;
+        }
+        .footer-center{
+            width: 625px;
+            height: 110px;
+            float: left;
+            margin-left: 30px;
+        }
+        .footer-center ul{
+            width: 60px;
+            height: 110px;
+            float: left;
+            list-style: none;
+            margin-left: 30px;
+        }
+        .footer-center ul li{
+            width: 60px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: grey;
+            font-size: 12px;
+        }
+        .footer-right{
+            width: 90px;
+            height: 110px;
+            float: left;
+        }
+         .footer-right img{
+            width: 90px;
+            height: 110px;
+         }
+         .info{
+            width: 900px;
+            height: 30px;
+            margin: 0 auto;
+         }
+         .info-pic{
+            width: 800px;
+            height: 40px;
+           
+            margin: 0 auto;
+            margin-top: 40px;
+         }
+    </style>
+</head>
+<body>
+    <!--header-->
+<div class="header">
+    <div class="header-left">
+        <span>帮5买，享帮帮</span>
+    </div>
+    <div class="header-right">
+        <div class="header-right-left">
+            <img src="images/1.jpg" />
+            <img src="images/2.jpg" />
+            <img src="images/3.jpg" />
+            <span><a href="#">登录</a></span>
+            <span><a href="#">注册</a></span>
+        </div>
+        <div class="header-right-right">
+            <span>
+                <img src="images/4.jpg" />
+                <a href="#"> 我的订单</a>
+            </span>
+            <span><a href="#"> 我的收藏</a></span>
+            <span><a href="#"> 帮钻兑换</a></span>
+            <span>
+                <img src="images/phone.png" />
+                <a href="#"> 手机版</a>
+            </span>
+            <span><a href="#"> 帮5淘</a></span>
+            <span><a href="#"> 客服服务</a></span>
+            <span>
+                <img src="images/gouwuche.jpg" />
+                <a href="#"> 购物车</a>
+            </span>
+            <span><a href="#" style="color: orange"> 0</a></span>
+        </div>
+    </div>  
+</div>
+  <!--sousuo-->
+  <div class="sousuo">
+      <div class="sousuo-pic">
+          <img src="images/5.jpg" />
+      </div>
+      <div class="sousuo-center">
+          <input class="text" type="text" placeholder="请输入网站或关键字，直通全网，快速帮5购" name="">
+          <span class="btn text-center"><a href="#" >搜全网</a></span>
+      </div>
+      <div class="wenti">
+          <div class="wenti-left">
+              <img src="images/6.png" />
+              <p>400-085-0505</p>
+          </div>
+          <div class="wenti-center">
+              <img src="images/7.png" />
+              <p>400-085-0505</p>
+          </div>
+          <div class="wenti-right">
+              <img src="images/wenhao.jpg"  style="margin-top: 10px;" />
+              <span style="font-size: 14px">常见问题</span>
+          </div>
+      </div>
+       
+      </div>
+      <div class="sousuo-bottom">
+           <span><a href="#">洗发护发</a>&nbsp;|</span>
+           <span><a href="#">日本纸尿裤</a>&nbsp;|</span>
+           <span><a href="#">身体乳</a>&nbsp;|</span>
+           <span><a href="#">内衣文胸</a>&nbsp;|</span>
+           <span><a href="#">iPhone 6s</a>&nbsp;|</span>
+           <span><a href="#">ipad Air2</a>&nbsp;|</span>
+           <span><a href="#">牛仔裤</a>&nbsp;|</span>
+           <span><a href="#">奶粉</a>&nbsp;|</span>
+           <span><a href="#">防晒霜</a>&nbsp;|</span>
+           <span><a href="#">伞</a>&nbsp;|</span>
+       </div>
+  </div>
+       </div>
+  <!--title-->
+  <div class=" title">
+      <div class=" title-left">
+          <span>全部商品分类</span>
+      </div>
+      <div class="title-right">
+          <a href="#">帮5赚</a>
+          <a href="#">帮韩品</a>
+          <a href="#">超划算</a>
+          <a href="#">品牌货站</a>
+          <a href="#">韩国馆</a>
+          <a href="#">帮社区</a>
+          <a href="#">一元兑奖</a>
+      </div>
+  </div>
+   <!--banner-->
+   <div class="banner">
+       <div class="banner-left">
+           <div class="banner-left-top clearfix">
+               <div class="banner-left-top-left" >
+                   <span>当前搜索电商全网</span>
+               </div>
+               <div class="banner-left-top-right" >
+                   <ul>
+                       <li><a href="#">手机</a></li>
+                       <li><a href="#">数码</a></li>
+                       <li><a href="#">影音</a></li>
+                       <li><a href="#">配件</a></li>
+                   </ul>
+                   <ul>
+                       <li><a href="#">电脑</a></li>
+                       <li><a href="#">网络</a></li>
+                       <li><a href="#">办公</a></li>
+                       <li><a href="#">打印</a></li>
+                   </ul>
+                   <ul>
+                       <li><a href="#">家电</a></li>
+                       <li><a href="#">厨卫</a></li>
+                       <li><a href="#">生活</a></li>
+                       <li><a href="#">个户</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">园艺</a></li>
+                       <li><a href="#">家具</a></li>
+                       <li><a href="#">家纺</a></li>
+                       <li><a href="#">家饰</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">彩妆</a></li>
+                       <li><a href="#">面部</a></li>
+                       <li><a href="#">身体</a></li>
+                       <li><a href="#">香水</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">男装</a></li>
+                       <li><a href="#">女装</a></li>
+                       <li><a href="#">内衣</a></li>
+                       <li><a href="#">其他</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">女包</a></li>
+                       <li><a href="#">男包</a></li>
+                       <li><a href="#">女鞋</a></li>
+                       <li><a href="#">男鞋</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">运动</a></li>
+                       <li><a href="#">户外</a></li>
+                       <li><a href="#">装备</a></li>
+                       <li><a href="#">服饰</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">儿童</a></li>
+                       <li><a href="#">婴儿</a></li>
+                       <li><a href="#">食品</a></li>
+                       <li><a href="#">玩具</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">乐器</a></li>
+                       <li><a href="#">家宠</a></li>
+                       <li><a href="#">收藏</a></li>
+                       <li><a href="#">鲜花</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">保健</a></li>
+                       <li><a href="#">理疗</a></li>
+                       <li><a href="#">药品</a></li>
+                       <li><a href="#">眼镜</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">果蔬</a></li>
+                       <li><a href="#">礼品</a></li>
+                       <li><a href="#">粮油</a></li>
+                       <li><a href="#">特产</a></li>
+                   </ul>
+                    <ul>
+                       <li><a href="#">文艺</a></li>
+                       <li><a href="#">生活</a></li>
+                       <li><a href="#">科技</a></li>
+                       <li><a href="#">教育</a></li>
+                   </ul>
+               </div>
+           </div>
+            <div class="banner-left-bottom">
+                <ul>
+                    <li><img src="images/8.jpg" /><span style="font-size: 12px;">什么是帮5购</span></li>
+                     <li><img src="images/9.jpg" /><span style="font-size: 12px;">帮5购提供什么服务</span></li>
+                      <li><img src="images/10.jpg" /><span style="font-size: 12px;">如何开通帮5购服务</span></li>
+                </ul>
+            </div>
+       </div>
+       <div class="banner-center">
+           <div class="banner-center-top">
+               <img src="images/bann3.jpeg" style="width: 100%;" id="img1"/>
+        <ul class="radius" id="radius">
+            <li class="active">1</li>  
+             <li>2</li> 
+             <li>3</li> 
+             <li>4</li> 
+             <li>5</li> 
+             <li>6</li>
+       </ul>
+
+       
+           </div>
+           <div class="banner-center-bottom">
+               <img src="images/11.jpg" />
+               <img src="images/12.jpg" />
+               <img src="images/13.png" />
+               <img src="images/14.png" />
+           </div>
+       </div>
+       <div class="banner-right">
+           <div class="banner-right-top">
+               <p><img src="images/12.png" />
+                <span>帮帮快讯</span>
+                <img src="images/jiantou.jpg" /></p>
+                <ul style="width: 200px;">
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理1</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理2</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理3</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理4</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理5</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理6</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理7</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理8</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理9</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理10</li>
+                    <li style="font-size: 12px;">[公告]帮购及VIP服务调理11</li>
+                </ul>
+           </div>
+           <div class="banner-right-bottom">
+               <p>
+                   <img src="images/phone.png" style="margin-left: 10px;" />
+                   <span style="font-size: 12px;font-weight: 700;">话费充值</span>
+                   <span style="font-size: 12px">可使用超级帮钻</span>
+               </p>
+               <input style="margin-left: 10px;" type="text" placeholder="请输入手机号" name="">
+               <select style="margin-left: 10px;margin-top: 5px;">
+                 <option >30</option>
+               </select>
+               <span style="font-size: 12px;color: #FF4D04">￥30</span>
+               <p class="banner-right-bottom-p" style="width: 180px;">充值</p>
+           </div>
+       </div>
+   </div>
+   <!--footer-->
+   <div class="footer" style="margin-bottom: 50px;">
+       <div class="footer-left">
+           <img src="images/loginB.jpg"  />
+       </div>
+       <div class="footer-center">
+           <ul>
+               <li style="font-size: 14px;font-weight: 700;color:black;">购物指南</li>
+               <li>如何下单</li>
+               <li>帮5购流程</li>
+               <li>订单查询</li>
+               <li>购物指南</li>
+               <li>物流配送</li>
+           </ul>
+              <ul>
+               <li style="font-size: 14px;font-weight: 700;color:black;">支付相关</li>
+               <li>支付方式</li>
+               <li>安全设置</li>
+               <li>账户信息</li>
+           </ul>
+              <ul>
+               <li style="font-size: 14px;font-weight: 700;color:black;">售后服务</li>
+               <li>取消订单</li>
+               <li>申请售后</li>
+               <li>退货流程</li>
+               <li>退还相关</li>
+           </ul>
+              <ul>
+               <li style="font-size: 14px;font-weight: 700;color:black;">VIP服务</li>
+               <li>VIP优惠</li>
+               <li>如何成为VIP</li>
+               <li>超级帮钻</li>
+            </ul>
+                  <ul>
+               <li style="font-size: 14px;font-weight: 700;color:black;">帮韩品</li>
+               <li>韩国正品</li>
+               <li>闪电发货</li>
+               <li>帮韩国售后</li>
+           </ul>
+              <ul>
+               <li style="font-size: 14px;font-weight: 700;color:black;">更多</li>
+               <li>手机APP</li>
+               <li>帮5采APP</li>
+               <li>帮5淘插件</li>
+               <li>其他</li>
+           </ul>
+       </div>
+       <div class="footer-right">
+           <img src="images/erweima.jpg" />
+       </div>
+   </div>
+        <div class="sousuo-bottom">
+           <span><a href="#">关于帮5买</a>&nbsp;|</span>
+           <span><a href="#">联系我们</a>&nbsp;|</span>
+           <span><a href="#">合作商家</a>&nbsp;|</span>
+           <span><a href="#">友情链接</a>&nbsp;|</span>
+           <span><a href="#">加入我们</a>&nbsp;|</span>
+           <span><a href="#">移动应用</a>&nbsp;|</span>
+           <span><a href="#">热门</a>&nbsp;|</span>
+           <span><a href="#">广告联盟</a>&nbsp;|</span>
+           <span><a href="#">使用条款</a>&nbsp;|</span>
+           
+       </div>
+         <!--info-->
+         <div class="info">
+             <img src="images/15.png" />
+         </div>
+         <!--info-pic-->
+         <div class="info-pic">
+             <img src="images/bo1.gif" />
+             <img src="images/bo2.png" />
+             <img src="images/bo3.gif" />
+             <img src="images/bo4.png" />
+             <img src="images/bo5.png" />
+             <img src="images/bo6.png" />
+             <img src="images/bo7.png" />
+         </div>
+</body>
+<!--
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+-->
+<script type="text/javascript">
+   //封装根据id获取元素的函数
+function $(id){
+  return document.getElementById(id);   
+}
+//图片地址
+var timeId = null; //定时器变量
+var speed = 3000; //秒数
+var brr =["bann1.jpeg","bann2.jpeg","bann3.jpeg","bann4.jpeg","bann5.jpeg","bann6.png"];   
+var count =0;  //数组的下标（索引）记录
+var img = document.getElementById("img1");
+var ali = $("radius").getElementsByTagName("li");// 获取当前ul下的所有的li
+//下一页的操作代码
+// document.getElementById("next").onclick=moveright;
+// document.getElementById("prev").onclick=moveleft;
+//向左运动的函数
+function moveleft(){
+    count--;
+    if(count<0){
+        count = brr.length-1;   
+    }
+      img.setAttribute("src","images/"+brr[count]);
+      getRadiusChange(ali[count]);
+}
+//向右运动的函数
+function moveright(){
+   count++;
+   if(count>brr.length-1){
+         count =0; 
+   }
+   img.setAttribute("src","images/"+brr[count]);
+   getRadiusChange(ali[count]);
+}
+//按钮元素设置函数
+function getRadiusChange(obj){
+    for(var j =0;j<ali.length;j++){
+                ali[j].className = " ";  
+    }
+    obj.className = "active";
+}
+//小圆点切换轮播图
+for(var i=0;i<ali.length;i++){
+    ali[i].index = i;
+    ali[i].onclick=function(){
+             getRadiusChange(this);
+             count = this.index;
+            img.setAttribute("src","images/"+brr[this.index]);
+    }
+}
+//定时器
+timeId =setInterval(moveright,speed);
+//鼠标移入
+img.onmouseover=function(){
+    clearInterval(timeId);
+}
+//鼠标移出
+img.onmouseout=function(){
+    timeId =setInterval(moveright,speed);
+} 
+</script>
+</html>
